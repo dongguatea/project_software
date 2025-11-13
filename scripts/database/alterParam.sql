@@ -1,0 +1,38 @@
+-- ALTER TABLE param_sets
+--     DROP COLUMN entityName;
+-- ALTER TABLE param_sets
+--     ADD COLUMN isDestroyer boolean default 0;
+-- ALTER TABLE param_sets
+--     ADD COLUMN isAircraft boolean default 0;
+-- ALTER TABLE param_sets
+--     DROP COLUMN entityInter;
+-- ALTER TABLE param_sets
+--     ADD COLUMN isBlacksmoke boolean default 0;
+-- ALTER TABLE param_sets
+--     ADD COLUMN isSpark boolean default 0;
+-- ALTER TABLE param_sets
+--     ADD COLUMN visibility double default 0;
+-- ALTER TABLE eval_metrics
+--   ADD COLUMN `F1_Score` double default 0.50; 
+-- ALTER TABLE eval_metrics
+--   CHANGE COLUMN F1_Score f1 double default 0;
+-- ALTER TABLE param_sets
+--   DROP COLUMN meanInterXCoord;
+-- ALTER TABLE param_sets
+--   DROP COLUMN meanInterYCoord;
+-- ALTER TABLE param_sets
+--   DROP COLUMN meanInterZCoord;
+-- ALTER TABLE eval_metrics DROP FOREIGN KEY fk_eval_img;
+ALTER TABLE param_sets
+  ADD COLUMN `date` varchar(64) default '07/15/2024'
+-- TRUNCATE TABLE eval_metrics;
+-- TRUNCATE TABLE images;
+-- TRUNCATE TABLE param_sets;
+-- ALTER TABLE eval_metrics
+-- ADD CONSTRAINT fk_eval_img FOREIGN KEY (image_id) REFERENCES images(image_id);
+-- ALTER TABLE angles
+--   ADD COLUMN `id` INT AUTO_INCREMENT,
+--   ADD PRIMARY KEY (`id`);
+-- ALTER TABLE param_sets
+--   MODIFY COLUMN `percentBlur` double default 0,
+--   MODIFY COLUMN `percentNoise` double default 0;

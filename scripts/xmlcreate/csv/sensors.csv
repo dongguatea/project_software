@@ -1,0 +1,3 @@
+ConfigID,name,index,minTemperature,maxTemperature,hFOVPixels,vFOVPixels,hFOVDeg,vFOVDeg,senSim_percentBlur,senSim_percentNoise,trackFilePath
+6,Mid-wave Infarared - MWIR,0,20,60,320,256,10,8,0.1,0.9,
+7,Long Wave Infarared - LWIR,0,20,60,320,256,10,8,0.2,0.5,

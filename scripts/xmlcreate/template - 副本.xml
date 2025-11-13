@@ -1,0 +1,432 @@
+<JRM_Configuration_file>
+  <sensor-list>
+    <sensor> 此部分为探测器的设置部分
+      <name>Mid-wave Infarared - MWIR</name> 光谱范围
+      <sensor_type>0</sensor_type> 
+      <type>0</type>
+      <ax>3</ax> ax,bx,nx是光谱范围对应的波长，包括maxLightLevel,不同的光谱对这四种参数，它们的内容都是一一对应的
+      <bx>5</bx>
+      <nx>1</nx>
+      <maxLightLevel>0.003</maxLightLevel>
+      <maxTemperature>60</maxTemperature> 量化温度范围，此处为最大部分
+      <minTemperature>-10</minTemperature>  量化温度范围，此处为最小部分
+      <worldXCoord>2451</worldXCoord> 探测器初始位置x
+      <worldYCoord>1504</worldYCoord> 探测器初始位置y
+      <worldZCoord>11.413 </worldZCoord> 探测器初始位置z
+      <latitude>21.513</latitude> 纬度
+      <longitude>-157.876235990755</longitude>  经度
+      <altitude>11.41</altitude>  海拔
+      <index>0</index>  索引值，如果有多种光谱范围可选，此处值就不唯一
+      <hFOVDeg>53.333</hFOVDeg> 视场角
+      <vFOVDeg>40</vFOVDeg>
+      <hFOVPixels>1024</hFOVPixels> 图片像素个数
+      <vFOVPixels>768</vFOVPixels>
+      <hDetectorSampleFactor>1</hDetectorSampleFactor>
+      <vDetectorSampleFactor>1</vDetectorSampleFactor>
+      <hScreenOffset>-1</hScreenOffset> 
+      <vScreenOffset>-1</vScreenOffset>
+      <useTrackfile>1</useTrackfile> 此处为设置是否使用轨迹文件，为1时trackFileName需要进行设置
+      <trackFilepath>track-node-fix-2000-0_20_360-30_85.trk</trackFilepath> 探测器的轨迹文件，在run Scene之后，在使用轨迹文件后出现的界面中设置
+      <heading>-79.1011994194831</heading> 初始方位角
+      <pitch>-1.185</pitch> 初始俯仰角
+      <roll>0</roll>
+      <isActive>1</isActive> 此处代表是否采用当前的光谱，当配置文件中包含多个sensor可选时，此处为0则代表不选择此光谱，为1代表选择此光谱
+      <gainSensor>l</gainSensor>
+      <levelSensor>0</levelSensor>
+      <ReceiverGain>1</ReceiverGain>
+      <HorizAngSpeed>0</HorizAngSpeed>
+      <VertAngSpeed>0</VertAngSpeed>
+      <ThreshDetect>0</ThreshDetect>
+      <ThreshClassify>0</ThreshClassify>
+      <ThreshRecognize>0</ThreshRecognize>
+      <ThreshIdentify>0</ThreshIdentify>
+      <PersistenceTime>0</PersistenceTime>
+      <sensorRGBColor>—1</sensorRGBColor>
+      <automaticRadiance>0</automaticRadiance>
+      <intensityModulationGain>1</intensityModulationGain>
+      <displayType>1</displayType>
+      <isarIntegrationTime>1000</isarIntegrationTime>
+      <minWedgeExtent>0</minWedgeExtent>
+      <maxWedgeExtent>360</maxWedgeExtent>
+      <displayRange>519.23017</displayRange>
+      <enableBacksweep>1</enableBacksweep>
+      <showOtwView>0</showOtwView>
+      <senSim>  不同的光谱对应的senSim基本相同，仅个别的地方有所不同，例如eletronics中的maxAGCgain，长波为0.1，中波为100
+        <enableSenSim>0</enableSenSim>
+        <enableGPUSenSim>1</enableGPUSenSim>
+        <enableFilter>1</enableFilter>
+        <enableNoise>1</enableNoise>
+        <enableGainLevel>1</enableGainLevel>
+        <enableHalos>0</enableHalos>
+        <percentBlur>1</percentBlur> 模糊程度
+        <percentNoise>1</percentNoise> 噪声程度
+        <percentGain>1</percentGain>
+        <percentLevel>0</percentLevel>
+        <percentHaloThreshold>1</percentHaloThreshold>
+        <enableACCoupling>0</enableACCoupling>
+        <enableBlackHot>0</enableBlackHot>
+        <enableAGC>0</enableAGC>
+        <enableMotionBlur>0</enableMotionBlur>
+        <sensorIndex>-1</sensorIndex>
+        <detector>
+          <startWavelength>3.5</startWavelength>
+          <endWavelength>4.5</endWavelength>
+          <dwellTime>100</dwellTime>
+          <NET>0.5</NET>
+          <FixedNoisePercent>0</FixedNoisePercent>
+          <noiseFreqExp>2</noiseFreqExp>
+          <noiseFreqKnee>87.5</noiseFreqKnee>
+          <numDetStaresH>512</numDetStaresH>
+          <numDetStaresV>512</numDetStaresV>
+          <pitchDetH>0.02</pitchDetH>
+          <pitchDetV>0.02</pitchDetV>
+          <backTemp>293.17</backTemp>
+          <NER>0</NER>
+          <percentPixelFill>100</percentPixelFill>
+          <percentDeadPixel>100</percentDeadPixel>
+          <resolutionScale>1</resolutionScale>
+          <percentPoisson>0</percentPoisson>
+          <percentFInverse>0</percentFInverse>
+          <fullColorEnabled>0</fullColorEnabled>
+          <scanMaskEnabled>0</scanMaskEnabled>
+          <scanMaskGainFileName/>
+          <scanMaskLevelFileName/>
+          <scanMaskDirection>0</scanMaskDirection>
+          <scanMaskMinGain>0</scanMaskMinGain>
+          <scanMaskMaxGain>1</scanMaskMaxGain>
+          <scanMaskMinLevel>-0.5</scanMaskMinLevel>
+          <scanMaskMaxLevel>0.5</scanMaskMaxLevel>
+          <scanMaskLineSpacing>1</scanMaskLineSpacing>
+          <scanMaskUserDefined>0</scanMaskUserDefined>
+          <sensorIndex>-1</sensorIndex>
+        </detector>
+        <optics>
+          <aspectRatio>1.33</aspectRatio>
+          <widthDimension>100</widthDimension>
+          <apertureShape>1</apertureShape>
+          <blurSpotDiameter>0.1</blurSpotDiameter>
+          <horizFOV>53.3333</horizFOV>
+          <vertFOV>40</vertFOV>
+          <mtfMotionBlur>0.1</mtfMotionBlur>
+          <haloThreshold>0.1</haloThreshold>
+          <haloRadius>1</haloRadius>
+          <haloIntensity>24</haloIntensity>
+          <percentHaloIntensity>1</percentHaloIntensity>
+          <UserDefinedMTFenabIe>0</UserDefinedMTFenabIe>
+          <UserDefinedMTFfileName/>
+          <sensorIndex>-1</sensorIndex>
+        </optics>
+        <eletronics>
+          <frameRate>30</frameRate>
+          <preCutonFreq>0.001</preCutonFreq>
+          <postCutoffFreq>14920</postCutoffFreq>
+          <gain>1</gain>
+          <level>0</level>
+          <percentGain>1</percentGain>
+          <percentLevel>0</percentLevel>
+          <sensorIndex>-l</sensorIndex>
+          <maxAGCgain>100</maxAGCgain>
+          <minAGCgain>0.1</minAGCgain>
+          <AGCmode>1</AGCmode>
+          <colorMapType>1</colorMapType>
+          <colorMapUserDefinedRadFile/>
+          <colorMapEnable>0</colorMapEnable>
+        </eletronics>
+      </senSim>
+    </sensor>
+    <!-- <sensor>
+        <name>Long Wave Infarared - LWIR</name>
+        <sensor_type>0</sensor_type>
+        <type>0</type>
+        <ax>8</ax>
+        <bx>12</bx>
+        <nx>1</nx>
+        <maxLightLevel>0.003</maxLightLevel>
+        <maxTemperature>60</maxTemperature>
+        <minTemperature>-10</minTemperature>
+        <worldXCoord>2451<worldXCoord>
+        <worldYCoord>1504</worldYCoord>
+        <worldZCoord>11.413 </worldZCoord>
+        <latitude>21.513<latitude>
+        <longitude>-157.876235990755</longitude>
+        <altitude>11.41</altitude>
+        <index>1</index>
+        <hFOVDeg>53.333</hFOVDeg>
+        <vFOVDeg>40</vFOVDeg>
+        <hFOVPixels>1024</hFOVPixels>
+        <vFOVPixels>768</vFOVPixels>
+        <hDetectorSampleFactor>1</hDetectorSampIeFactor>
+        <vDetectorSampleFactor>1</vDetectorSampleFactor>
+        <hScreenOffset>-1</hScreenOffset>
+        <vScreenOffset>-1</vScreenOffset>
+        <useTrackfile>O</useTrackfile>
+        <trackFilepath/>
+        <heading>-79.1011994194831</heading>
+        <pitch>-1.185</pitch>
+        <roll>0</roll>
+        <isActive>0</isActive>
+        <gainSensor>l</gainSensor>
+        <levelSensor>0</levelSensor>
+        <ReceiverGain>1</ReceiverGain>
+        <HorizAngSpeed>0</HorizAngSpeed>
+        <VertAngSpeed>0</VertAngSpeed>
+        <ThreshDetect>0</ThreshDetect>
+        <ThreshClassify>0</ThreshClassify>
+        <ThreshRecognize>0</ThreshRecognize>
+        <ThreshIdentify>0</ThreshIdentify>
+        <PersistenceTime>0</PersistenceTime>
+        <sensorRGBColor>-1</sensorRGBCoIor>
+        <automaticRadiance>0</automaticRadiance>
+        <intensityModulationGain>1</intensityModulationGain>
+        <displayType>1</displayType>
+        <isarIntegrationTime>1000</isarIntegrationTime>
+        <minWedgeExtent>0</minWedgeExtent>
+        <maxWedgeExtent>360</maxWedgeExtent>
+        <displayRange>519.23017</dispIayRange>
+        <enableBacksweep>1</enableBacksweep>
+        <showOtwView>0</showOtwView>
+        <senSim>
+          <enableSenSim>0</enableSenSim>
+          <enableGPUSenSim>1</enableGPUSenSim>
+          <enableFilter>1</enableFilter>
+          <enableNoise>1</enableNoise>
+          <enableGainLevel>1</enableGainLevel>
+          <enableHalos>0</enableHalos>
+          <percentBlur>1</percentBlur>
+          <percentNoise>1</percentNoise>
+          <percentGain>1</percentGain>
+          <percentLevel>0</percentLevel>
+          <percentHaloThreshold>1</percentHaloThreshold>
+          <enableACCoupling>0</enableACCoupling>
+          <enableBlackHot>0</enableBlackHot>
+          <enableAGC>0</enableAGC>
+          <enableMotionBlur>0</enableMotionBlur>
+          <sensorIndex>-1</sensorIndex>
+          <detector>
+            <startWavelength>3.5</startWavelength>
+            <endWavelength>4.5</endWavelength>
+            <dwellTime>100</dwellTime>
+            <NET>0.5</NET>
+            <FixedNoisePercent>0</FixedNoisePercent>
+            <noiseFreqExp>2</noiseFreqExp>
+            <noiseFreqKnee>87.5</noiseFreqKnee>
+            <numDetStaresH>512</numDetStaresH>
+            <numDetStaresV>512</numDetStaresV>
+            <pitchDetH>0.02</pitchDetH>
+            <pitchDetV>0.02</pitchDetV>
+            <backTemp>293.17</backTemp>
+            <NER>0</NER>
+            <percentPixelFill>100</percentPixelFill>
+            <percentDeadPixel>100</percentDeadPixel>
+            <resolutionScale>1</resolutionScale>
+            <percentPoisson>0</percentPoisson>
+            <percentFInverse>0</percentFInverse>
+            <fullColorEnabled>0</fullColorEnabled>
+            <scanMaskEnabled>0</scanMaskEnabled>
+            <scanMaskGainFileName/>
+            <scanMaskLevelFileName/>
+            <scanMaskDirection>0</scanMaskDirection>
+            <scanMaskMinGain>0</scanMaskMinGain>
+            <scanMaskMaxGain>1</scanMaskMaxGain>
+            <scanMaskMinLevel>-0.5</scanMaskMinLevel>
+            <scanMaskMaxLeveI>0.5</scanMaskMaxLevel>
+            <scanMaskLineSpacing>1</scanMaskLineSpacing>
+            <scanMaskUserDefined>0</scanMaskUserDefined>
+            <sensorIndex>-1</sensorIndex>
+          </detector>
+          <optics>
+            <aspectRatio>1.33</aspectRatio>
+            <widthDimension>100</widthDimension>
+            <apertureShape>1</apertureShape>
+            <blurSpotDiameter>0.1</blurSpotDiameter>
+            <horizFOV>53.3333</horizFOV>
+            <vertFOV>40</vertFOV>
+            <mtfMotionBlur>0.1</mtfMotionBlur>
+            <haloThreshold>0.1</haloThreshold>
+            <haloRadius>1</haloRadius>
+            <haloIntensity>30</haloIntensity>
+            <percentHaloIntensity>1</percentHaloIntensity>
+            <UserDefinedMTFenabIe>0</UserDefinedMTFenabIe>
+            <UserDefinedMTFfileName/>
+            <sensorIndex>-1</sensorIndex>
+          </optics>
+          <eletronics>
+            <frameRate>30</frameRate>
+            <preCutonFreq>0.001</preCutonFreq>
+            <postCutoffFreq>14920</postCutoffFreq>
+            <gain>l</gain>
+            <level>0</level>
+            <percentGain>1</percentGain>
+            <percentLevel>0</percentLevel>
+            <sensorIndex>-l</sensorIndex>
+            <maxAGCgain>1</maxAGCgain>
+            <minAGCgain>0.1</minAGCgain>
+            <AGCmode>1</AGCmode>
+            <colorMapType>1</colorMapType>
+            <colorMapUserDefinedRadFile/>
+            <colorMapEnable>0</colorMapEnable>
+          </eletronics>
+        </senSim>
+    </sensor> -->
+  </sensor-list>
+  <entity-list> 其部分为object中添加目标后的内容，当需要添加目标时，只需要将一个entity的内容复制粘贴到最后一个entity底下，修改索引index和其他需要修改的内容即可
+    <entity>
+      <index>0</index> 目标索引
+      <entityName>talwar</entityName> 目标名称
+      <geomFileName>object/F43_Talwar_Trishul/talwar_f43_trishul.flt</geomFileName> 目标flt文件
+      <matSysFileName>object/F43_Talwar_Trishul/F43_tALWAR_TrishulEmat.ms</matSysFileName>  目标ms文件
+      <category>defaultCategory</category> 目标种类，根据JRM中提供的种类设置
+      <thermalSpinUp>72</thermalSpinUp>
+      <materialTextureType>0</materialTextureType>
+      <clampMode>0</clampMode>
+      <clampHeightOffset>0</clampHeightOffset>
+      <brdf>0</brdf>
+      <roughness>0</roughness>
+      <mmlsReflect>0</mmlsReflect>
+      <thermalReflect>0</thermalReflect>
+      <thermalReflectTemp>200</thermalReflectTemp>
+      <thermalReflectExtentX>1</thermalReflectExtentX>
+      <thermalRef1ectExtentY>1</thermalRef1ectExtentY>
+      <thermalReflectOffsetX>0</thermalReflectOffsetX>
+      <thermalReflectOffsetY>0</thermalReflectOffsetY>
+      <useTrackfile>0</useTrackfile> 是否采用轨迹文件，如果采用的话此处为1，然后trackFileName如注释所示
+      <trackFileName/>
+      <!-- <trackFileName>object/track/track.trk</trackFileName> --> 采用轨迹文件时，此部分为轨迹文件
+      <worldXCoord>2550</worldXCoord> 初始位置x
+      <worldYCoord>1500</worldYCoord> 初始位置y
+      <worldZCoord>0</worldZCoord> 初始位置z
+      <latitude>21.5133861185897</latitude> 纬度
+      <longitude>—157.87528151214</longitude> 经度
+      <altitude>0</altitude> 海拔
+      <heading>—90</heading> 方位角
+      <pitch>0</pitch> 俯仰角
+      <roll>0</roll>
+      <rcsFileName/>
+      <scFileName/>
+      <pipFileName/>
+      <ImpostorEnable>0</ImpostorEnable>
+      <ImpostorTextureResoIution>0</ImpostorTextureResoIution>
+      <ImpostorPixelCoverage>0</ImpostorPixelCoverage>
+    </entity> 其部分内容同上一个entity类似，只需要修改需要用到的内容即可
+      <entity>
+      <index>1</index>
+      <entityName>water</entityName>
+      <geomFileName>water</geomFileName>
+      <matSysFileName>ms/osvWater.ms</matSysFileName>
+      <category>water</category>
+      <thermalSpinUp>72</thermalSpinUp>
+      <materialTextureType>0</materialTextureType>
+      <clampMode>0</clampMode>
+      <clampHeightOffset>0</clampHeightOffset>
+      <brdf>0</brdf>
+      <roughness>0</roughness>
+      <mmlsReflect>0</mmlsReflect>
+      <thermalReflect>0</thermalReflect>
+      <thermalReflectTemp>200</thermalReflectTemp>
+      <thermalReflectExtentX>1</thermalReflectExtentX>
+      <thermalRef1ectExtentY>1</thermalRef1ectExtentY>
+      <thermalReflectOffsetX>O</thermalReflectOffsetX>
+      <thermalReflectOffsetY>O</thermalReflectOffsetY>
+      <useTrackfile>O</useTrackfile>
+      <trackFileName/>
+      <worldXCoord>0</worldXCoord>
+      <worldYCoord>0</worldYCoord>
+      <worldZCoord>0</worldZCoord>
+      <latitude>21.5</latitude>
+      <longitude>—157.89999999427</longitude>
+      <altitude>0</altitude>
+      <heading>0</heading>
+      <pitch>0</pitch>
+      <roll>0</roll>
+      <rcsFileName/>
+      <scFileName/>
+      <pipFileName/>
+      <ImpostorEnable>0</ImpostorEnable>
+      <ImpostorTextureResoIution>0</ImpostorTextureResoIution>
+      <ImpostorPixelCoverage>0</ImpostorPixelCoverage>
+    </entity>
+  </entity-list>
+  <terrain> 此部分在object中设置的内容，为背景设置
+    <name>mcm</name> 背景名称
+    <terrainFilepath>terrain/Oahu/Oahu226/lamppost.flt</terrainFilepath> 背景的flt文件
+    <projectionType>0</projectionType>
+    <materialTextureType>0</materialTextureType>
+    <swOriginLatitude>21.5</swOriginLatitude> 纬度
+    <swOriginLongitude>-157.9</swOriginLongitude> 经度
+    <xPositionOffset>0</xPositionOffset> x偏置范围
+    <yPositionOffset>0</yPositionOffset>  y偏置范围
+    <mtlsysFilepath>terrain/Oahu/Oahu226/OahuEmat.ms</mtlsysFilepath> 背景的ms文件
+    <thermalSpinup>48</thermalSpinup>
+    <visibility>1</visibility> 背景能见度
+    <trees>1</trees>
+    <treeWind>0</treeWind>
+    <terrainObjects>1</terrainObjects>
+    <altitude>15</altitude> 海拔
+    <forceTreeBillboards>0</forceTreeBillboards>
+    <logScale>1</logScale>
+    <terrainCenterEnabled>1</terrainCenterEnabled>
+    <brdf>0</brdf>
+    <roughness>0</roughness>
+  </terrain>
+  <environment-manager> 此部分为environment中的设置内容
+    <time>6</time>  时间
+    <date>07/24/2004</date> 日期
+    <celestialSkyTableFilepath>./atm/stellar_sky.ir</celestialSkyTableFilepath> 天空条件？
+    <atmModel>1</atmModel>  气候模型
+    <hazeModel>1</hazeModel>  气溶胶模型，其中0为no Haze,1为Rural 23km，根据JRM中可选的hazeModel以此类推
+    <cloudModel>0</cloudModel>
+    <windVelocity>1</windVelocity>
+    <visibility>0</visibility> 能见度，当采用气溶胶模型时为0（即hazeModel值非0）
+    <useAtmosphericAttenuation>1</useAtmosphericAttenuation>
+    <useAtmosphericScattering>1</useAtmosphericScattering>
+    <useThermalEmission>1</useThermalEmission>
+    <enableLighting>1</enableLighting>
+    <atmosphereFile>./atm/summer.mcd</atmosphereFile>
+    <minAirTemperature>10</minAirTemperature> 最低气温
+    <maxAirTemperature>25</maxAirTemperature> 最高气温
+    <skydomeRadius>195000</skydomeRadius>
+    <logScale>0</logScale>
+    <mouseVel>1</mouseVel>
+    <useAtmosphericMultiScattering>1</useAtmosphericMultiScattering>
+    <useOriginalCode>1</useOriginalCode>
+    <useBNNATM>0</useBNNATM>
+    <useRoundEarth>0</useRoundEarth>
+    <starThreshold>100</starThreshold>
+    <atmExtinction>1</atmExtinction>
+    <rainRate>0</rainRate> 雨速
+    <rainTemp>15</rainTemp> 雨温
+    <humidityRatio>0.2</humidityRatio>
+  </environment-manager>
+  <scenario>
+    <useShadows>0</useShadows>
+    <useAngleDependentEmissivity>0</useAngleDependentEmissivity>
+    <useNormalBasedIntensityModulation>0</useNormalBasedIntensityModulation>
+    <useLightSources>1</useLightSources>
+    <useLitWindows>1</useLitWindows>
+    <litWindowStart>18</litWindowStart>
+    <litWindowStop>6</litWindowStop>
+    <jrmDynamicChannelClip>1</jrmDynamicChannelClip>
+    <channelClipNear>1</channelClipNear>
+    <channelClipFar>120000</channelClipFar>
+  </scenario>
+  <channel-list/>
+  <globalSettings>
+    <useConsistentFOV>1</useConsistentFOV>
+  </globalSettings>
+  <track> 此部分是在点击Run Scene之后，在使用轨迹文件后出现的界面中设置
+    <startTime>0</startTime>  仿真开始时间
+    <endTime>29</endTime>     仿真结束时间
+    <frameRate>30</frameRate> 帧率
+    <speed>1</speed>  跑图速度
+    <increment>1</increment>  JRM中出一张图的间隔（前一张图和后一张图的间隔时间）
+    <playMode>0</playMode>
+    <loopContinuous>0</loopContinuous>  播放完一次后是否循环播放
+    <currentSimTime>0</currentSimTime>  初始的仿真时间
+    <saveFileCount>0</saveFileCount>
+    <linkTOD>0</linkTOD>
+    <saveImagesDuringPlayback>1</saveImagesDuringPlayback>   是否在播放过程中保存图片，1代表保存
+    <useFrames>O</useFrames>  是否使用帧率的形式跑图，这样的话1s就会跑frameRate中设置数量的图片
+    <saveFileName>E:/JRM/Image/0.bmp</saveFileName>  图片保存的位置
+    <recordingVelocity>10</recordingVelocity>
+  </track>
+</JRM_Configuration_file>

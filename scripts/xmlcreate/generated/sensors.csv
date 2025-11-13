@@ -1,0 +1,163 @@
+ConfigID,name,index,minTemperature,maxTemperature,hFOVPixels,vFOVPixels,hFOVDeg,vFOVDeg,senSim_percentBlur,senSim_percentNoise,trackFilePath
+163,Mid-wave Infarared - MWIR,0,20,60,320,256,10,8,0.0,0.0,E:\track.trk
+164,Mid-wave Infarared - MWIR,0,20,60,320,256,10,8,0.5,0.0,E:\track.trk
+165,Mid-wave Infarared - MWIR,0,20,60,320,256,10,8,1.0,0.0,E:\track.trk
+166,Mid-wave Infarared - MWIR,0,20,60,320,256,10,8,0.0,0.5,E:\track.trk
+167,Mid-wave Infarared - MWIR,0,20,60,320,256,10,8,0.5,0.5,E:\track.trk
+168,Mid-wave Infarared - MWIR,0,20,60,320,256,10,8,1.0,0.5,E:\track.trk
+169,Mid-wave Infarared - MWIR,0,20,60,320,256,10,8,0.0,1.0,E:\track.trk
+170,Mid-wave Infarared - MWIR,0,20,60,320,256,10,8,0.5,1.0,E:\track.trk
+171,Mid-wave Infarared - MWIR,0,20,60,320,256,10,8,1.0,1.0,E:\track.trk
+172,Mid-wave Infarared - MWIR,0,20,60,640,512,20,16,0.0,0.0,E:\track.trk
+173,Mid-wave Infarared - MWIR,0,20,60,640,512,20,16,0.5,0.0,E:\track.trk
+174,Mid-wave Infarared - MWIR,0,20,60,640,512,20,16,1.0,0.0,E:\track.trk
+175,Mid-wave Infarared - MWIR,0,20,60,640,512,20,16,0.0,0.5,E:\track.trk
+176,Mid-wave Infarared - MWIR,0,20,60,640,512,20,16,0.5,0.5,E:\track.trk
+177,Mid-wave Infarared - MWIR,0,20,60,640,512,20,16,1.0,0.5,E:\track.trk
+178,Mid-wave Infarared - MWIR,0,20,60,640,512,20,16,0.0,1.0,E:\track.trk
+179,Mid-wave Infarared - MWIR,0,20,60,640,512,20,16,0.5,1.0,E:\track.trk
+180,Mid-wave Infarared - MWIR,0,20,60,640,512,20,16,1.0,1.0,E:\track.trk
+181,Mid-wave Infarared - MWIR,0,20,60,1024,1024,32,32,0.0,0.0,E:\track.trk
+182,Mid-wave Infarared - MWIR,0,20,60,1024,1024,32,32,0.5,0.0,E:\track.trk
+183,Mid-wave Infarared - MWIR,0,20,60,1024,1024,32,32,1.0,0.0,E:\track.trk
+184,Mid-wave Infarared - MWIR,0,20,60,1024,1024,32,32,0.0,0.5,E:\track.trk
+185,Mid-wave Infarared - MWIR,0,20,60,1024,1024,32,32,0.5,0.5,E:\track.trk
+186,Mid-wave Infarared - MWIR,0,20,60,1024,1024,32,32,1.0,0.5,E:\track.trk
+187,Mid-wave Infarared - MWIR,0,20,60,1024,1024,32,32,0.0,1.0,E:\track.trk
+188,Mid-wave Infarared - MWIR,0,20,60,1024,1024,32,32,0.5,1.0,E:\track.trk
+189,Mid-wave Infarared - MWIR,0,20,60,1024,1024,32,32,1.0,1.0,E:\track.trk
+190,Mid-wave Infarared - MWIR,0,0,70,320,256,10,8,0.0,0.0,E:\track.trk
+191,Mid-wave Infarared - MWIR,0,0,70,320,256,10,8,0.5,0.0,E:\track.trk
+192,Mid-wave Infarared - MWIR,0,0,70,320,256,10,8,1.0,0.0,E:\track.trk
+193,Mid-wave Infarared - MWIR,0,0,70,320,256,10,8,0.0,0.5,E:\track.trk
+194,Mid-wave Infarared - MWIR,0,0,70,320,256,10,8,0.5,0.5,E:\track.trk
+195,Mid-wave Infarared - MWIR,0,0,70,320,256,10,8,1.0,0.5,E:\track.trk
+196,Mid-wave Infarared - MWIR,0,0,70,320,256,10,8,0.0,1.0,E:\track.trk
+197,Mid-wave Infarared - MWIR,0,0,70,320,256,10,8,0.5,1.0,E:\track.trk
+198,Mid-wave Infarared - MWIR,0,0,70,320,256,10,8,1.0,1.0,E:\track.trk
+199,Mid-wave Infarared - MWIR,0,0,70,640,512,20,16,0.0,0.0,E:\track.trk
+200,Mid-wave Infarared - MWIR,0,0,70,640,512,20,16,0.5,0.0,E:\track.trk
+201,Mid-wave Infarared - MWIR,0,0,70,640,512,20,16,1.0,0.0,E:\track.trk
+202,Mid-wave Infarared - MWIR,0,0,70,640,512,20,16,0.0,0.5,E:\track.trk
+203,Mid-wave Infarared - MWIR,0,0,70,640,512,20,16,0.5,0.5,E:\track.trk
+204,Mid-wave Infarared - MWIR,0,0,70,640,512,20,16,1.0,0.5,E:\track.trk
+205,Mid-wave Infarared - MWIR,0,0,70,640,512,20,16,0.0,1.0,E:\track.trk
+206,Mid-wave Infarared - MWIR,0,0,70,640,512,20,16,0.5,1.0,E:\track.trk
+207,Mid-wave Infarared - MWIR,0,0,70,640,512,20,16,1.0,1.0,E:\track.trk
+208,Mid-wave Infarared - MWIR,0,0,70,1024,1024,32,32,0.0,0.0,E:\track.trk
+209,Mid-wave Infarared - MWIR,0,0,70,1024,1024,32,32,0.5,0.0,E:\track.trk
+210,Mid-wave Infarared - MWIR,0,0,70,1024,1024,32,32,1.0,0.0,E:\track.trk
+211,Mid-wave Infarared - MWIR,0,0,70,1024,1024,32,32,0.0,0.5,E:\track.trk
+212,Mid-wave Infarared - MWIR,0,0,70,1024,1024,32,32,0.5,0.5,E:\track.trk
+213,Mid-wave Infarared - MWIR,0,0,70,1024,1024,32,32,1.0,0.5,E:\track.trk
+214,Mid-wave Infarared - MWIR,0,0,70,1024,1024,32,32,0.0,1.0,E:\track.trk
+215,Mid-wave Infarared - MWIR,0,0,70,1024,1024,32,32,0.5,1.0,E:\track.trk
+216,Mid-wave Infarared - MWIR,0,0,70,1024,1024,32,32,1.0,1.0,E:\track.trk
+217,Mid-wave Infarared - MWIR,0,0,90,320,256,10,8,0.0,0.0,E:\track.trk
+218,Mid-wave Infarared - MWIR,0,0,90,320,256,10,8,0.5,0.0,E:\track.trk
+219,Mid-wave Infarared - MWIR,0,0,90,320,256,10,8,1.0,0.0,E:\track.trk
+220,Mid-wave Infarared - MWIR,0,0,90,320,256,10,8,0.0,0.5,E:\track.trk
+221,Mid-wave Infarared - MWIR,0,0,90,320,256,10,8,0.5,0.5,E:\track.trk
+222,Mid-wave Infarared - MWIR,0,0,90,320,256,10,8,1.0,0.5,E:\track.trk
+223,Mid-wave Infarared - MWIR,0,0,90,320,256,10,8,0.0,1.0,E:\track.trk
+224,Mid-wave Infarared - MWIR,0,0,90,320,256,10,8,0.5,1.0,E:\track.trk
+225,Mid-wave Infarared - MWIR,0,0,90,320,256,10,8,1.0,1.0,E:\track.trk
+226,Mid-wave Infarared - MWIR,0,0,90,640,512,20,16,0.0,0.0,E:\track.trk
+227,Mid-wave Infarared - MWIR,0,0,90,640,512,20,16,0.5,0.0,E:\track.trk
+228,Mid-wave Infarared - MWIR,0,0,90,640,512,20,16,1.0,0.0,E:\track.trk
+229,Mid-wave Infarared - MWIR,0,0,90,640,512,20,16,0.0,0.5,E:\track.trk
+230,Mid-wave Infarared - MWIR,0,0,90,640,512,20,16,0.5,0.5,E:\track.trk
+231,Mid-wave Infarared - MWIR,0,0,90,640,512,20,16,1.0,0.5,E:\track.trk
+232,Mid-wave Infarared - MWIR,0,0,90,640,512,20,16,0.0,1.0,E:\track.trk
+233,Mid-wave Infarared - MWIR,0,0,90,640,512,20,16,0.5,1.0,E:\track.trk
+234,Mid-wave Infarared - MWIR,0,0,90,640,512,20,16,1.0,1.0,E:\track.trk
+235,Mid-wave Infarared - MWIR,0,0,90,1024,1024,32,32,0.0,0.0,E:\track.trk
+236,Mid-wave Infarared - MWIR,0,0,90,1024,1024,32,32,0.5,0.0,E:\track.trk
+237,Mid-wave Infarared - MWIR,0,0,90,1024,1024,32,32,1.0,0.0,E:\track.trk
+238,Mid-wave Infarared - MWIR,0,0,90,1024,1024,32,32,0.0,0.5,E:\track.trk
+239,Mid-wave Infarared - MWIR,0,0,90,1024,1024,32,32,0.5,0.5,E:\track.trk
+240,Mid-wave Infarared - MWIR,0,0,90,1024,1024,32,32,1.0,0.5,E:\track.trk
+241,Mid-wave Infarared - MWIR,0,0,90,1024,1024,32,32,0.0,1.0,E:\track.trk
+242,Mid-wave Infarared - MWIR,0,0,90,1024,1024,32,32,0.5,1.0,E:\track.trk
+243,Mid-wave Infarared - MWIR,0,0,90,1024,1024,32,32,1.0,1.0,E:\track.trk
+244,Long Wave Infarared - LWIR,0,20,60,320,256,10,8,0.0,0.0,E:\track.trk
+245,Long Wave Infarared - LWIR,0,20,60,320,256,10,8,0.5,0.0,E:\track.trk
+246,Long Wave Infarared - LWIR,0,20,60,320,256,10,8,1.0,0.0,E:\track.trk
+247,Long Wave Infarared - LWIR,0,20,60,320,256,10,8,0.0,0.5,E:\track.trk
+248,Long Wave Infarared - LWIR,0,20,60,320,256,10,8,0.5,0.5,E:\track.trk
+249,Long Wave Infarared - LWIR,0,20,60,320,256,10,8,1.0,0.5,E:\track.trk
+250,Long Wave Infarared - LWIR,0,20,60,320,256,10,8,0.0,1.0,E:\track.trk
+251,Long Wave Infarared - LWIR,0,20,60,320,256,10,8,0.5,1.0,E:\track.trk
+252,Long Wave Infarared - LWIR,0,20,60,320,256,10,8,1.0,1.0,E:\track.trk
+253,Long Wave Infarared - LWIR,0,20,60,640,512,20,16,0.0,0.0,E:\track.trk
+254,Long Wave Infarared - LWIR,0,20,60,640,512,20,16,0.5,0.0,E:\track.trk
+255,Long Wave Infarared - LWIR,0,20,60,640,512,20,16,1.0,0.0,E:\track.trk
+256,Long Wave Infarared - LWIR,0,20,60,640,512,20,16,0.0,0.5,E:\track.trk
+257,Long Wave Infarared - LWIR,0,20,60,640,512,20,16,0.5,0.5,E:\track.trk
+258,Long Wave Infarared - LWIR,0,20,60,640,512,20,16,1.0,0.5,E:\track.trk
+259,Long Wave Infarared - LWIR,0,20,60,640,512,20,16,0.0,1.0,E:\track.trk
+260,Long Wave Infarared - LWIR,0,20,60,640,512,20,16,0.5,1.0,E:\track.trk
+261,Long Wave Infarared - LWIR,0,20,60,640,512,20,16,1.0,1.0,E:\track.trk
+262,Long Wave Infarared - LWIR,0,20,60,1024,1024,32,32,0.0,0.0,E:\track.trk
+263,Long Wave Infarared - LWIR,0,20,60,1024,1024,32,32,0.5,0.0,E:\track.trk
+264,Long Wave Infarared - LWIR,0,20,60,1024,1024,32,32,1.0,0.0,E:\track.trk
+265,Long Wave Infarared - LWIR,0,20,60,1024,1024,32,32,0.0,0.5,E:\track.trk
+266,Long Wave Infarared - LWIR,0,20,60,1024,1024,32,32,0.5,0.5,E:\track.trk
+267,Long Wave Infarared - LWIR,0,20,60,1024,1024,32,32,1.0,0.5,E:\track.trk
+268,Long Wave Infarared - LWIR,0,20,60,1024,1024,32,32,0.0,1.0,E:\track.trk
+269,Long Wave Infarared - LWIR,0,20,60,1024,1024,32,32,0.5,1.0,E:\track.trk
+270,Long Wave Infarared - LWIR,0,20,60,1024,1024,32,32,1.0,1.0,E:\track.trk
+271,Long Wave Infarared - LWIR,0,0,70,320,256,10,8,0.0,0.0,E:\track.trk
+272,Long Wave Infarared - LWIR,0,0,70,320,256,10,8,0.5,0.0,E:\track.trk
+273,Long Wave Infarared - LWIR,0,0,70,320,256,10,8,1.0,0.0,E:\track.trk
+274,Long Wave Infarared - LWIR,0,0,70,320,256,10,8,0.0,0.5,E:\track.trk
+275,Long Wave Infarared - LWIR,0,0,70,320,256,10,8,0.5,0.5,E:\track.trk
+276,Long Wave Infarared - LWIR,0,0,70,320,256,10,8,1.0,0.5,E:\track.trk
+277,Long Wave Infarared - LWIR,0,0,70,320,256,10,8,0.0,1.0,E:\track.trk
+278,Long Wave Infarared - LWIR,0,0,70,320,256,10,8,0.5,1.0,E:\track.trk
+279,Long Wave Infarared - LWIR,0,0,70,320,256,10,8,1.0,1.0,E:\track.trk
+280,Long Wave Infarared - LWIR,0,0,70,640,512,20,16,0.0,0.0,E:\track.trk
+281,Long Wave Infarared - LWIR,0,0,70,640,512,20,16,0.5,0.0,E:\track.trk
+282,Long Wave Infarared - LWIR,0,0,70,640,512,20,16,1.0,0.0,E:\track.trk
+283,Long Wave Infarared - LWIR,0,0,70,640,512,20,16,0.0,0.5,E:\track.trk
+284,Long Wave Infarared - LWIR,0,0,70,640,512,20,16,0.5,0.5,E:\track.trk
+285,Long Wave Infarared - LWIR,0,0,70,640,512,20,16,1.0,0.5,E:\track.trk
+286,Long Wave Infarared - LWIR,0,0,70,640,512,20,16,0.0,1.0,E:\track.trk
+287,Long Wave Infarared - LWIR,0,0,70,640,512,20,16,0.5,1.0,E:\track.trk
+288,Long Wave Infarared - LWIR,0,0,70,640,512,20,16,1.0,1.0,E:\track.trk
+289,Long Wave Infarared - LWIR,0,0,70,1024,1024,32,32,0.0,0.0,E:\track.trk
+290,Long Wave Infarared - LWIR,0,0,70,1024,1024,32,32,0.5,0.0,E:\track.trk
+291,Long Wave Infarared - LWIR,0,0,70,1024,1024,32,32,1.0,0.0,E:\track.trk
+292,Long Wave Infarared - LWIR,0,0,70,1024,1024,32,32,0.0,0.5,E:\track.trk
+293,Long Wave Infarared - LWIR,0,0,70,1024,1024,32,32,0.5,0.5,E:\track.trk
+294,Long Wave Infarared - LWIR,0,0,70,1024,1024,32,32,1.0,0.5,E:\track.trk
+295,Long Wave Infarared - LWIR,0,0,70,1024,1024,32,32,0.0,1.0,E:\track.trk
+296,Long Wave Infarared - LWIR,0,0,70,1024,1024,32,32,0.5,1.0,E:\track.trk
+297,Long Wave Infarared - LWIR,0,0,70,1024,1024,32,32,1.0,1.0,E:\track.trk
+298,Long Wave Infarared - LWIR,0,0,90,320,256,10,8,0.0,0.0,E:\track.trk
+299,Long Wave Infarared - LWIR,0,0,90,320,256,10,8,0.5,0.0,E:\track.trk
+300,Long Wave Infarared - LWIR,0,0,90,320,256,10,8,1.0,0.0,E:\track.trk
+301,Long Wave Infarared - LWIR,0,0,90,320,256,10,8,0.0,0.5,E:\track.trk
+302,Long Wave Infarared - LWIR,0,0,90,320,256,10,8,0.5,0.5,E:\track.trk
+303,Long Wave Infarared - LWIR,0,0,90,320,256,10,8,1.0,0.5,E:\track.trk
+304,Long Wave Infarared - LWIR,0,0,90,320,256,10,8,0.0,1.0,E:\track.trk
+305,Long Wave Infarared - LWIR,0,0,90,320,256,10,8,0.5,1.0,E:\track.trk
+306,Long Wave Infarared - LWIR,0,0,90,320,256,10,8,1.0,1.0,E:\track.trk
+307,Long Wave Infarared - LWIR,0,0,90,640,512,20,16,0.0,0.0,E:\track.trk
+308,Long Wave Infarared - LWIR,0,0,90,640,512,20,16,0.5,0.0,E:\track.trk
+309,Long Wave Infarared - LWIR,0,0,90,640,512,20,16,1.0,0.0,E:\track.trk
+310,Long Wave Infarared - LWIR,0,0,90,640,512,20,16,0.0,0.5,E:\track.trk
+311,Long Wave Infarared - LWIR,0,0,90,640,512,20,16,0.5,0.5,E:\track.trk
+312,Long Wave Infarared - LWIR,0,0,90,640,512,20,16,1.0,0.5,E:\track.trk
+313,Long Wave Infarared - LWIR,0,0,90,640,512,20,16,0.0,1.0,E:\track.trk
+314,Long Wave Infarared - LWIR,0,0,90,640,512,20,16,0.5,1.0,E:\track.trk
+315,Long Wave Infarared - LWIR,0,0,90,640,512,20,16,1.0,1.0,E:\track.trk
+316,Long Wave Infarared - LWIR,0,0,90,1024,1024,32,32,0.0,0.0,E:\track.trk
+317,Long Wave Infarared - LWIR,0,0,90,1024,1024,32,32,0.5,0.0,E:\track.trk
+318,Long Wave Infarared - LWIR,0,0,90,1024,1024,32,32,1.0,0.0,E:\track.trk
+319,Long Wave Infarared - LWIR,0,0,90,1024,1024,32,32,0.0,0.5,E:\track.trk
+320,Long Wave Infarared - LWIR,0,0,90,1024,1024,32,32,0.5,0.5,E:\track.trk
+321,Long Wave Infarared - LWIR,0,0,90,1024,1024,32,32,1.0,0.5,E:\track.trk
+322,Long Wave Infarared - LWIR,0,0,90,1024,1024,32,32,0.0,1.0,E:\track.trk
+323,Long Wave Infarared - LWIR,0,0,90,1024,1024,32,32,0.5,1.0,E:\track.trk
+324,Long Wave Infarared - LWIR,0,0,90,1024,1024,32,32,1.0,1.0,E:\track.trk

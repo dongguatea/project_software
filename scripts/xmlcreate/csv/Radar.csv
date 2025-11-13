@@ -1,0 +1,2 @@
+﻿type,frequency,startazimuth,endazimuth,startgrazing,endgrazing,rangeResolution,wideResolution,Quantization,PRF,boolOblique,Sea,Angular_reverse,Foils
+ddg-104,16.5,0,340,30,85,1,1.5,10,1,1,0,0,0

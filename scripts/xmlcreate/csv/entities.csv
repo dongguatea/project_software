@@ -1,0 +1,11 @@
+﻿ConfigID,index,entityName,category,geomFileName,matSysFileName,x,y,z
+1,0,water,water,water,ms/osvWater.ms,0,0,0
+1,1,DDG,defaultcategory,E:\test_soup.txt,E:\test_soup.ms,0,0,0
+2,0,water,water,E:\test_water.txt,E:\test_water.ms,0,0,0
+2,1,soup,defaultcategory,E:\test_soup.txt,E:\test_soup.ms,0,0,0
+3,0,water,water,E:\test_water.txt,E:\test_water.ms,0,0,0
+3,1,soup,defaultcategory,E:\test_soup.txt,E:\test_soup.ms,0,0,0
+4,0,water,water,E:\test_water.txt,E:\test_water.ms,0,0,0
+4,1,soup,defaultcategory,E:\test_soup.txt,E:\test_soup.ms,0,0,0
+5,0,water,water,E:\test_water.txt,E:\test_water.ms,0,0,0
+5,1,soup,defaultcategory,E:\test_soup.txt,E:\test_soup.ms,0,0,0
