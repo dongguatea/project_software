@@ -1,0 +1,91 @@
+import argparse
+from pathlib import Path
+
+def parse_args():
+    p = argparse.ArgumentParser(
+        description="合并两个目录中的 YOLO txt（同名文件合并为一个；可选类别号重映射）"
+    )
+    p.add_argument("--dir-a", required=True, help="类别A的txt目录")
+    p.add_argument("--dir-b", required=True, help="类别B的txt目录")
+    p.add_argument("--out-dir", required=True, help="合并后的输出目录")
+    p.add_argument("--class-a", type=int, default=None,
+                   help="可选：把A侧所有行的class强制改成该值（否则保留原样）")
+    p.add_argument("--class-b", type=int, default=None,
+                   help="可选：把B侧所有行的class强制改成该值（否则保留原样）")
+    p.add_argument("--suffix", default=".txt", help="标注文件后缀，默认 .txt")
+    p.add_argument("--sort", action="store_true",
+                   help="合并后对行排序（先按class，再按x_center）")
+    return p.parse_args()
+
+def read_yolo_lines(txt_path: Path, force_class: int | None):
+    """读取一个YOLO txt文件，必要时把类别号重写；返回list[str]（已strip）"""
+    if not txt_path or not txt_path.exists():
+        return []
+    out = []
+    with txt_path.open("r", encoding="utf-8") as f:
+        for raw in f:
+            line = raw.strip()
+            if not line:
+                continue
+            parts = line.split()
+            if len(parts) != 5:
+                # 简单容错：跳过不规范行
+                print(f"[WARN] 非YOLO5列行，已跳过: {txt_path.name} -> {line}")
+                continue
+            if force_class is not None:
+                parts[0] = str(force_class)
+                line = " ".join(parts)
+            out.append(line)
+    return out
+
+def sort_yolo_lines(lines: list[str]) -> list[str]:
+    """按 class（int）升序，再按 x_center（float）升序"""
+    def keyfn(s: str):
+        c, x, *_ = s.split()
+        try:
+            return (int(c), float(x))
+        except Exception:
+            return (999999, 1e9)
+    return sorted(lines, key=keyfn)
+
+def main():
+    args = parse_args()
+    dir_a = Path(args.dir_a)
+    dir_b = Path(args.dir_b)
+    out_dir = Path(args.out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    # 建立 stem -> Path 的索引
+    def index_dir(d: Path):
+        return {p.stem: p for p in d.glob(f"*{args.suffix}") if p.is_file()}
+
+    idx_a = index_dir(dir_a)
+    idx_b = index_dir(dir_b)
+
+    # 合并“文件名stem”的并集
+    all_stems = sorted(set(idx_a.keys()) | set(idx_b.keys()))
+
+    total_files = 0
+    total_lines = 0
+    for stem in all_stems:
+        lines = []
+        lines += read_yolo_lines(idx_a.get(stem), args.class_a)
+        lines += read_yolo_lines(idx_b.get(stem), args.class_b)
+
+        if not lines:
+            # 两侧都没有有效行，跳过
+            continue
+
+        if args.sort:
+            lines = sort_yolo_lines(lines)
+
+        out_path = out_dir / f"{stem}{args.suffix}"
+        out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        total_files += 1
+        total_lines += len(lines)
+        print(f"[OK] {stem}{args.suffix}  合并{len(lines)}行")
+
+    print(f"[DONE] 合并完成：{total_files} 个文件，共 {total_lines} 行")
+
+if __name__ == "__main__":
+    main()

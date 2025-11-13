@@ -1,0 +1,2 @@
+F:\data_manager\pythonProject1\yolov12\images\2\C-ddg-104-17.5-10dB.jpg
+F:\data_manager\pythonProject1\yolov12\images\3\C-ddg-104-17-20dB.jpg

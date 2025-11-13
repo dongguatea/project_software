@@ -1,0 +1,50 @@
+import argparse
+import cv2
+from pathlib import Path
+
+def args():
+  parse = argparse.ArgumentParser(description="get labels")
+  parse.add_argument("--imgdir",default="E:\\data_manager\\pythonProject1\\yolov12\\footscript",help="图片所在文件夹路径")
+  parse.add_argument("--labeldir",default="E:\\data_manager\\pythonProject1\\yolov12\\footscript\\labels",help="标签输出文件夹路径")
+  parse.add_argument("--visout",default="E:\\data_manager\\pythonProject1\\yolov12\\footscript\\vis",help="可视化输出目录（按图片同名）")
+  parse.add_argument("--classA",default=0,help="类别A(高亮)的类别号")
+  parse.add_argument("--classB",default=1,help="类别B(次亮)的类别号")
+  parse.add_argument("--thrHigh",default=215)
+  parse.add_argument("--thrLow",default=180)
+  return parse.parse_args()
+
+
+def ensure_gray(img):
+  if len(img.shape) == 2:
+    return img
+  if img.shape[2] == 4:
+    img = cv2.cvtColor(img,cv2.COLOR_BGRA2BGR)
+    return img
+  
+def to_yolo(x,y,w,h,img_w,img_h):
+  x = (x + w/2) / img_w
+  y = (y + h/2) / img_h
+  w = w / img_w
+  h = h / img_h
+  return x,y,w,h
+
+def main():
+  args = args()
+  labeldir = Path(args.labeldir)
+  if not labeldir.exists():
+    labeldir.mkdir(parents=True,exist_ok=True)
+  imgdir = Path(args.imgdir)
+  img_paths = [img_path for img_path in imgdir.rglob("*.bmp")]
+  for img_path in img_paths:
+    img = cv2.imread(str(img_path))
+    if len(img.shape) == 2:
+      gray = img
+      vis = cv2.cvtColor(img,cv2.COLOR_GRAY2BGR)
+    else:
+      vis = img
+      gray = ensure_gray(img_path)
+    H,W = gray.shape[:2]
+    yolo_lines = []
+    # 类别A：灰度 >= thr_high
+    _,bin_high_img = cv2.threshold(gray,args.thrHigh,255,cv2.THRESH_BINARY)
+    

@@ -1,0 +1,4 @@
+images_for_train/manbo/1/1.jpg
+images_for_train/manbo/2/1.jpg
+images_for_train/panmao/1/1.jpg
+images_for_train/panmao/2/1.jpg

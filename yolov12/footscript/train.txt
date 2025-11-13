@@ -1,0 +1,7 @@
+F:\data_manager\pythonProject1\yolov12\images\2\C-ddg-104-17.5-20dB.jpg
+F:\data_manager\pythonProject1\yolov12\images\1\C-ddg-104-16.5-10dB.jpg
+F:\data_manager\pythonProject1\yolov12\images\1\C-ddg-104-16.5-20dB.jpg
+F:\data_manager\pythonProject1\yolov12\images\3\C-ddg-104-17-30dB.jpg
+F:\data_manager\pythonProject1\yolov12\images\2\C-ddg-104-17.5-30dB.jpg
+F:\data_manager\pythonProject1\yolov12\images\3\C-ddg-104-17-10dB.jpg
+F:\data_manager\pythonProject1\yolov12\images\1\C-ddg-104-16.5-30dB.jpg

@@ -1,0 +1,9 @@
+train: train.txt
+val: val.txt
+test: test.txt
+
+nc: 2
+names: {
+  0: manbo,
+  1: panmao
+}
