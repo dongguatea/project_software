@@ -1,0 +1,10 @@
+# 运行（weights 指向你训练好的 SSD 权重）
+python ssd_detect_db.py \
+  --weights weights/ssd_yolo.best.pth \
+  --images_dir images \
+  --labels_dir labels \
+  --device 0 \
+  --conf_thr 0.30 \
+  --nms_iou 0.50 \
+  --match_iou 0.50 \
+  --batch_commit 5000

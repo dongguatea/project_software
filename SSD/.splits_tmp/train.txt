@@ -1,0 +1,8 @@
+--classes_txt yolov12/classes.txt /	--存放类别的txt位置
+--val_list_file splits/val.txt /	--验证集清单文件。用于每个评估周期计算 mAP 与触发早停、保存最优权重。
+--labels_dir yolov12/data/labels /	--标签所处的文件夹位置
+--metric map50 --patience 10 --eval_interval 1 /		--以 mAP@0.5 作为“最优模型”与早停的判据，若连续 10 次评估（见下）没有比当前最佳提升，则提前停止，每 1 个 epoch 进行一次验证评估
+--images_dir yolov12/data/images /  --图像所处的文件夹位置
+--list_file splits/train.txt /		--训练集清单文件。里面每行是相对 images_dir 的图片路径；只会用清单中的图片做训练。
+python train.py train_yolo /   --采用yolo格式的数据集进行训练
+--epochs 80 --batch_size 8 --lr 0.001 /   --训练80轮，每次训练导入8张图，学习率为0.001

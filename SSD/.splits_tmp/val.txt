@@ -1,0 +1,1 @@
+--out weights/ssd_yolo.pth  --模型权重保存路径。每次评估都会更新该文件；当指标刷新最佳时，额外保存为同名的 ssd_yolo.best.pth。
